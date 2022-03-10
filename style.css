@@ -1,0 +1,166 @@
+:root {
+  /* Colors */
+  --green-color: #97D700;
+  --green-25-color: #E5F4BF;
+  --blue-color: #009AD1;
+  --blue-25-color: #C0E6F3;
+  --yellow-color: #FFF105;
+  --yellow-25-color: #FFFCBF;
+  --white-color: #FFFFFF;
+  --black-color: #000000;
+  --black-75-color: #404040;
+  --black-25-color: #BFBFBF;
+  --black-10-color: #E2E2E2;
+
+  /* Spacings */
+  --spacing-xxxs: 4px; 
+  --spacing-xxs: 8px;
+  --spacing-xs: 12px;
+  --spacing-s: 16px;
+  --spacing-m: 24px;
+  --spacing-l: 32px;
+  --spacing-xl: 40px;
+  --spacing-xxl: 48px;
+  --spacing-xxxl: 60px;
+  --spacing-4xl: 80px;
+  --spacing-5xl: 128px;
+}
+
+@font-face {
+  font-family: 'BentonSans';
+  src: url('https://public-1581674907527.s3.eu-west-1.amazonaws.com/BentonSans-Black.otf') format('opentype');
+}
+
+body {
+  background: #F4F4F4;
+}
+
+.topbar .topbar__logo {
+  background-color: var(--black-color);
+}
+
+.topbar * {
+  color: var(--black-color) !important;
+}
+
+.topbar .wpml-ls-native {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.topbar .wrapper {
+  padding-right: 0 !important;
+}
+
+.topbar,
+.topbar .topbar__middle {
+  background-color: var(--green-25-color);
+}
+
+.topbar .category-pretext {
+  display: none !important;
+}
+
+.topbar .topbar__bottom {
+  background-color: var(--white-color);
+}
+
+.topbar__bottom .expand-lists {
+  height: 100%;
+}
+
+.topbar__bottom .category-link-middle ul.menu {
+  justify-content: center;
+  gap: var(--spacing-xl);
+}
+
+.topbar__bottom .category-link-middle ul.menu li {
+  margin-right: 0;
+  padding: var(--spacing-s) 0;
+}
+
+.topbar .wrapper {
+  max-width: none;
+  padding-left: 0;
+}
+
+.topbar .topbar__bottom {
+  border: none;
+}
+
+.topbar .top-area__links:first-child {
+  margin-bottom: 0;
+  flex: 0;
+}
+
+.topbar .top-area__links:first-child .topbar__logo {
+  margin-right: var(--spacing-xxl);
+}
+
+.topbar .top-area__links:nth-child(2) {
+  flex: 1;
+}
+
+.topbar .top-area__links:nth-child(2) .topbar__logo-middle {
+  text-align: left;
+  max-width: none;
+  margin-top: 0;
+  height: 100%;
+}
+
+.topbar .top-area__links:nth-child(2) .topbar__logo-middle .topbar__logo-middle-text {
+  font-size: 36px;
+}
+
+.topbar .top-area__links:nth-child(2) .topbar__logo-middle:not([href*="lang=en"]) .topbar__logo-middle-text {
+	visibility: hidden;
+	position: relative;
+}
+
+.topbar .top-area__links:nth-child(2) .topbar__logo-middle:not([href*="lang=en"]) .topbar__logo-middle-text::after {
+	visibility: visible;
+	position: absolute;
+	top: 0;
+	left: 0;
+  content: 'Verkkolehti';
+}
+
+.topbar .top-area__links:nth-child(2) .topbar__logo-middle:not([href*="lang=en"]) .topbar__logo-middle-subtitle {
+	visibility: hidden;
+	position: relative;
+}
+
+.topbar .top-area__links:nth-child(2) .topbar__logo-middle .topbar__logo-middle-subtitle::after {
+  visibility: visible;
+	position: absolute;
+	top: 0;
+	left: 0;
+  content: 'Trustworthy information on packaging recycling and producer responsibility';
+}
+
+.topbar .top-area__links:nth-child(2) .topbar__logo-middle:not([href*="lang=en"]) .topbar__logo-middle-subtitle::after {
+	visibility: visible;
+	position: absolute;
+	top: 0;
+	left: 0;
+  content: 'Luotettavaa tietoa pakkauskierrätyksestä ja tuottajavastuusta';
+}
+
+.topbar .top-area__links:nth-child(3) {
+  padding-right: var(--spacing-s);
+}
+
+.topbar .top-area__links {
+  margin-bottom: 0;
+}
+
+.topbar .topbar__search {
+  border-radius: 0;
+  border: 1px solid var(--black-color);
+}
+
+@media screen and (min-width: 1140px) {
+  .rightnav-icon.rightnav-hidden {
+    display: none;
+  }
+}
