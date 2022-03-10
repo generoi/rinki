@@ -28,7 +28,33 @@
 
 @font-face {
   font-family: 'BentonSans';
-  src: url('https://public-1581674907527.s3.eu-west-1.amazonaws.com/BentonSans-Black.otf') format('opentype');
+  font-weight: 900;
+  src: url('https://public-1581674907527.s3.eu-west-1.amazonaws.com/BentonSans/BentonSans+Black.otf') format('opentype');
+}
+@font-face {
+  font-family: 'BentonSans';
+  font-weight: 700;
+  src: url('https://public-1581674907527.s3.eu-west-1.amazonaws.com/BentonSans/BentonSans+Bold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'BentonSans';
+  font-weight: 500;
+  src: url('https://public-1581674907527.s3.eu-west-1.amazonaws.com/BentonSans/BentonSans+Medium.otf') format('opentype');
+}
+@font-face {
+  font-family: 'BentonSans';
+  font-weight: 400;
+  src: url('https://public-1581674907527.s3.eu-west-1.amazonaws.com/BentonSans/BentonSans+Book.otf') format('opentype');
+}
+@font-face {
+  font-family: 'BentonSans';
+  font-weight: 300;
+  src: url('https://public-1581674907527.s3.eu-west-1.amazonaws.com/BentonSans/BentonSans+Light.otf') format('opentype');
+}
+@font-face {
+  font-family: 'BentonSans';
+  font-weight: 100;
+  src: url('https://public-1581674907527.s3.eu-west-1.amazonaws.com/BentonSans/BentonSans+Thin.otf') format('opentype');
 }
 
 body {
