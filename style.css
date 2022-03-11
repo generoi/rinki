@@ -500,3 +500,8 @@ footer.footer .footer__block:nth-child(1) {
 footer.footer .footer__block:nth-child(3) .footer__box * {
   font-weight: 400;
 }
+
+section#cta-2.element-sticky, section#cta-2.element-abs {
+  position: sticky !important;
+  top: 15px !important;
+}
