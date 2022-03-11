@@ -129,6 +129,12 @@ body {
   padding: var(--spacing-s) 0;
 }
 
+.topbar__bottom .category-link-middle ul.menu li a {
+  margin-right: 0;
+  padding: var(--spacing-s) 0;
+  font-weight: 400;
+}
+
 .topbar .wrapper {
   max-width: none;
   padding-left: 0;
