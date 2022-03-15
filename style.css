@@ -257,11 +257,13 @@ body {
   justify-content: center;
 }
 
+.mobile_logo .topbar__logo-middle-text,
 .topbar .top-area__links:nth-child(2) .topbar__logo-middle .topbar__logo-middle-text {
 	visibility: hidden;
-	position: relative;
+	position: relative !important;
 }
 
+.mobile_logo .topbar__logo-middle-text::after,
 .topbar .top-area__links:nth-child(2) .topbar__logo-middle .topbar__logo-middle-text::after {
 	visibility: visible;
 	position: absolute;
@@ -270,6 +272,21 @@ body {
   content: 'Verkkolehti';
 }
 
+.mobile_logo .topbar__logo-middle-text {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.mobile_logo .topbar__logo-middle-text::after {
+  left: 62px !important;
+  font-size: 16px !important;
+}
+
+.mobile_logo.topbar__logo-middle {
+  padding-top: 0;
+}
+
+.mobile_logo .topbar__logo-middle-subtitle,
 .topbar .top-area__links:nth-child(2) .topbar__logo-middle .topbar__logo-middle-subtitle {
 	visibility: hidden;
 	position: relative;
@@ -317,6 +334,10 @@ body {
 }
 
 .widget-area_sidebar .h2::first-letter {
+  text-transform: uppercase;
+}
+
+.button.rinkiin-readmore::first-letter {
   text-transform: uppercase;
 }
 
@@ -448,6 +469,7 @@ body {
 .newsletter_box .megazine_newsletter_box__item .block-header {
 font-size: 18px;
 font-weight: 400;
+margin-bottom: 16px;
 }
 
 .newsletter_box .megazine_newsletter_box__item input {
@@ -465,12 +487,12 @@ font-weight: 400;
   border-radius: 4px;
   box-shadow: none;
   background: var(--green-color);
-  padding: var(--spacing-xxxs) var(--spacing-s);
+  padding: var(--spacing-xxxs) var(--spacing-l);
 }
 
 .button.button-newsletter input {
   font-size: 13.5px;
-  font-weight: 500;
+  font-weight: 700;
   background: transparent;
   padding: 0;
   text-transform: uppercase !important;
@@ -575,6 +597,12 @@ footer.footer .footer__block:nth-child(2) {
   gap: 140px;
 }
 
+.footer .footer__logo-rinki {
+      background-image: url(https://verkkolehti.rinkiin.fi/wp-content/uploads/2022/03/layer-2.svg) !important;
+    width: 78px !important;
+    height: 105px !important;
+}
+
 @media screen and (max-width: 1140px) {
   footer.footer .footer__block:nth-child(2) {
     gap: 40px !important;
@@ -609,4 +637,90 @@ section#cta-2.element-sticky, section#cta-2.element-abs {
 
 #mostrecent_articles-2 .typography__meta_alt * {
   color: var(--black-color) !important;
+}
+
+.megazine_newsletter_box__newsletter .screen-reader-text {
+  position: unset;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: none;
+  clip-path: none;
+  font-size: 10px !important;
+  text-transform: uppercase !important;
+  font-weight: 900;
+  margin-top: 16px;
+}
+
+.megazine_newsletter_box__newsletter ::-webkit-input-placeholder {
+  color: transparent;
+}
+.megazine_newsletter_box__newsletter :-moz-placeholder {
+color: transparent;
+}
+.megazine_newsletter_box__newsletter ::-moz-placeholder { 
+  color: transparent;
+}
+.megazine_newsletter_box__newsletter :-ms-input-placeholder {
+  color: transparent;
+}
+
+.button.rinkiin-readmore {
+  display: inline-block;
+}
+
+.button.rinkiin-readmore,
+.widget_faq .list-item__headline {
+  position: relative;
+}
+
+.button.rinkiin-readmore::after {
+  position: absolute;
+  right:-20px;
+  top: 50%;
+  display: block;
+  content: '';
+  width: 7px;
+  height: 12px;
+  background-image: url(https://verkkolehti.rinkiin.fi/wp-content/uploads/2022/03/angle-right-solid.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translateY(-50%);
+}
+
+.widget_faq .list-item__headline::after {
+  position: absolute;
+  right:0;
+  top: 50%;
+  display: block;
+  content: '';
+  width: 7px;
+  height: 12px;
+  background-image: url(https://verkkolehti.rinkiin.fi/wp-content/uploads/2022/03/angle-right-solid.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translateY(-50%);
+}
+
+@media screen and (max-width: 1140px) {
+  .topbar__logo.mobile_logo {
+    position: relative !important;
+  }
+
+  .topbar__logo-middle.mobile_logo {
+    max-width: none !important;
+    text-align: left !important;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .post.box-item {
+    display: flex !important;
+  }
+  .post.box-item .box-item__image {
+    min-width: 77px !important;
+  }
+  .post.box-item .box-item__image .fluid-image {
+    padding-top: 100% !important;
+  }
 }
