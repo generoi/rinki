@@ -158,8 +158,9 @@ body {
   background: #F4F4F4;
 }
 
-.topbar .topbar__logo {
-  background-color: var(--black-color);
+.topbar .topbar__logo,
+a.navigation-menu__logo {
+  background-color: var(--black-color) !important;
 }
 
 .topbar * {
@@ -278,7 +279,7 @@ body {
 }
 
 .mobile_logo .topbar__logo-middle-text::after {
-  left: 62px !important;
+  left: 86px !important;
   font-size: 16px !important;
 }
 
@@ -316,9 +317,10 @@ body {
   margin-bottom: 0;
 }
 
-.topbar .topbar__search {
-  border-radius: 0;
-  border: 1px solid var(--black-color);
+.topbar .topbar__search,
+.mobile__search {
+  border-radius: 0 !important;
+  border: 1px solid var(--black-color) !important;
 }
 
 @media screen and (min-width: 1140px) {
@@ -604,6 +606,11 @@ footer.footer .footer__block:nth-child(2) {
 }
 
 @media screen and (max-width: 1140px) {
+  #sidebar,
+  #content {
+    padding-top: 30px !important;
+  }
+
   footer.footer .footer__block:nth-child(2) {
     gap: 40px !important;
   }
@@ -703,24 +710,126 @@ color: transparent;
 }
 
 @media screen and (max-width: 1140px) {
-  .topbar__logo.mobile_logo {
+  .topbar__logo.mobile_logo,
+  .navigation-actions_mobile a.navigation-menu__logo {
     position: relative !important;
+    width: 70px !important;
+    height: 70px !important;
+    background-size: 30px 45px !important; 
   }
 
   .topbar__logo-middle.mobile_logo {
     max-width: none !important;
     text-align: left !important;
+    height: 70px !important;
+  }
+}
+
+@media screen and (max-width: 959px) and (min-width: 567px) {
+  #sidebar .widget-area {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    gap: 5% !important;
+  }
+  
+  #sidebar .widget-area section {
+    width: 45% !important;
   }
 }
 
 @media screen and (max-width: 567px) {
   .post.box-item {
     display: flex !important;
+    background: transparent !important;
+    border-bottom: #D5D5D5 solid 1px;
   }
+  
+  .post.box-item .box-item__body {
+    padding-top: 0 !important;
+  }
+  
+  .post.box-item .box-item__body .typography__meta {
+    padding-top: 0 !important;
+  }
+  
+  .first-item .post.box-item .box-item__body {
+    padding-top: 16px !important;
+  }
+  
+  .first-item .post.box-item {
+    display: block !important;
+    background: #fff !important;
+    border-bottom: none;
+  }
+
   .post.box-item .box-item__image {
     min-width: 77px !important;
   }
+
   .post.box-item .box-item__image .fluid-image {
     padding-top: 100% !important;
   }
+
+  .first-item .post.box-item .box-item__image .fluid-image {
+    padding-top: 52.5% !important;
+  }
+}
+
+.footer__logo-rinki {
+  float: none !important;
+}
+
+.topbar .navigation-actions_top,
+.topbar .navigation-actions_top .navigation-actions_mobile:first-child {
+  background-color: var(--green-25-color) !important;
+  box-shadow: none !important;
+}
+
+.topbar .navigation-actions_top .navigation-actions_mobile .topbar__logo-middle {
+  display: none !important;
+}
+
+.topbar .navigation-actions_top .navigation-actions_mobile .topbar__rightnav-body {
+  padding: 60px 40px !important;
+}
+
+.topbar .navigation-actions_top .navigation-actions_mobile .topbar__rightnav-body .arrow-right {
+  display: none !important;
+}
+
+.topbar .navigation-actions_top .navigation-actions_mobile .topbar__rightnav-body .rightnav-intext-links {
+  display: none !important;
+}
+
+/* .topbar .navigation-actions_top .navigation-actions_mobile .topbar__rightnav-body .rightnav-intext-links, */
+.topbar .navigation-actions_top .navigation-actions_mobile .topbar__rightnav-body .category-link-middle {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+
+.topbar .navigation-actions_top .navigation-actions_mobile .topbar__rightnav-body .rightnav-intext-links li,
+.topbar .navigation-actions_top .navigation-actions_mobile .topbar__rightnav-body .menu-item {
+  padding: 30px 0 !important;
+}
+
+.topbar .navigation-actions_top .navigation-actions_mobile .topbar__rightnav-body .rightnav-intext-links li a,
+.topbar .navigation-actions_top .navigation-actions_mobile .topbar__rightnav-body .menu-item a {
+  font-size: 20px !important;
+  line-height: 27px !important;
+  font-weight: 700 !important;
+}
+
+.topbar .tilis_nav_icon-open {
+  background-image: url(https://verkkolehti.rinkiin.fi/wp-content/uploads/2022/03/bars-regular.svg) !important;
+}
+
+.topbar .tilis_nav_icon-close {
+  background-image: url(https://verkkolehti.rinkiin.fi/wp-content/uploads/2022/03/xmark-regular.svg) !important;
+}
+
+.topbar .tilis_nav_icon {
+  margin: 20px 0 !important;
+  height: 25px !important;
 }
