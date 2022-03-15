@@ -182,7 +182,6 @@ a.navigation-menu__logo {
 }
 
 .list-item__headline {
-  font-size: 18px !important;
   font-weight: 700 !important;
   color: var(--black-color) !important;
 }
@@ -348,7 +347,6 @@ a.navigation-menu__logo {
 }
 
 .widget-area_sidebar .h2 {
-  font-size: 24px !important;
   font-weight:  900 !important;
   padding: 0 !important;
   margin-bottom: var(--spacing-m) !important;
@@ -518,10 +516,37 @@ section.widget.widget_faq .list-item .meta-list {
   display: none !important;
 }
 
+.single .widget.quiz .bulb-right {
+  background-image: url(https://verkkolehti.rinkiin.fi/wp-content/uploads/2022/03/lightbulb-on-light.svg) !important;
+  width: 29px !important;
+}
+
+.single .widget.quiz .quiz__header {
+  display: flex !important;
+  gap: 6px !important;
+  margin-bottom: 6px !important;
+}
+
+.single .widget.quiz .quiz__content {
+  color: var(--black-color) !important;
+  font-size: 18px !important;
+}
+
+.single .widget.quiz,
 div.cta__container {
   text-align: left !important;
   padding: var(--spacing-m) var(--spacing-s) !important;
   background: var(--blue-25-color);
+}
+
+.single .widget.quiz .button {
+  border-radius: 4px !important;
+  box-shadow: none !important;
+  background: var(--blue-color) !important;
+  color: var(--white-color) !important;
+  font-weight: 500 !important;
+  font-size: 13.5px !important;
+  text-transform: uppercase !important;
 }
 
 div.cta__title {
@@ -739,6 +764,10 @@ color: transparent !important;
 }
 
 @media screen and (max-width: 567px) {
+  #sidebar {
+    padding-top: 0 !important;
+  }
+
   .post.box-item {
     display: flex !important;
     background: transparent !important;
@@ -832,4 +861,139 @@ color: transparent !important;
 .topbar .tilis_nav_icon {
   margin: 20px 0 !important;
   height: 25px !important;
+}
+
+.page .content,
+.single .content {
+  background: transparent !important;
+}
+
+.single .content__body,
+.single .content__sidestory,
+.single .content__react-share,
+.single .widget-area_single,
+.single .content__header {
+  padding: 0 !important;
+}
+
+.single .content__share-links {
+  position: static !important;
+}
+
+.single .content__share-links ul {
+  display: flex !important;
+  margin-bottom: 30px !important;
+}
+
+div.content__featured-image-caption {
+  font-size: 14px !important;
+  margin-bottom: 40px !important;
+  padding: 0 !important;
+}
+
+.single div.cta__container {
+  background-color: var(--green-25-color) !important;
+}
+
+.single div.cta__container .button {
+  color: var(--black-color) !important;
+  background-color: var(--green-color) !important;
+  margin-bottom: 0 !important;
+}
+
+.single div.cta__container .cta__title {
+  margin: 0 !important;
+}
+
+.content__body>p:not(.no-dropcap):first-of-type:first-letter {
+  float: left !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+  padding-top: 0px !important;
+  padding-right: 0px !important;
+}
+
+.widget_single_articles_readmore {
+  margin-bottom: 0 !important;
+  background-color: transparent !important; 
+}
+
+.widget_single_articles_readmore .grid {
+  gap: 5% !important;
+  background-color: transparent !important; 
+}
+
+.widget_single_articles_readmore .grid .grid__item_1 {
+  width: 45% !important;
+}
+
+.widget_single_articles_readmore .post .awpo-lazy {
+  opacity: 1 !important;
+}
+
+.widget_single_articles_readmore .post .box-item__body {
+  position: static !important;
+  background: var(--white-color) !important;
+}
+
+.widget_single_articles_readmore .post .box-item__body h3 {
+  color: var(--black-color);
+}
+
+.widget_single_articles_readmore .post .box-item__body {
+  position: static !important;
+}
+
+.widget_single_articles_readmore .post .box-item__image .fluid-image {
+  padding-top: 52.5% !important;
+}
+
+@media screen and (max-width: 567px) {
+  .widget_single_articles_readmore .post .box-item__image .fluid-image {
+  padding-top: 100% !important;
+}
+.widget_single_articles_readmore .grid {
+  gap: 0 !important;
+}
+
+.widget_single_articles_readmore .grid .grid__item_1 {
+  width: 100% !important;
+}
+
+.widget_single_articles_readmore .grid .grid__item_1 .post .box-item__body {
+  background: transparent !important;
+}
+
+.widget_single_articles_readmore .grid .grid__item_1 .post.box-item {
+  padding-bottom: 16px !important;
+  margin-bottom: 16px !important;
+}
+}
+
+.widget_single_articles_readmore .block-header {
+  padding: 0 !important;
+  background: transparent !important;
+  color: var(--black-color) !important;  
+}
+
+.widget_single_articles_readmore .block-header {
+  text-transform: lowercase!important;
+}
+
+.widget_single_articles_readmore .block-header::first-letter {
+  text-transform: uppercase!important;
+}
+
+.widget_single_articles_readmore article:nth-child(3),
+.widget_single_articles_readmore article:nth-child(4)
+ {
+display: none !important;
+}
+
+.rns {
+  display: none !important;
+}
+
+.single #content {
+  margin-bottom: 0;
 }
