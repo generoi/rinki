@@ -833,6 +833,8 @@ color: transparent !important;
 
 .topbar .navigation-actions_top .navigation-actions_mobile .topbar__rightnav-body {
   padding: 60px 40px !important;
+  display: flex !important;
+  flex-direction: column-reverse !important;
 }
 
 .topbar .navigation-actions_top .navigation-actions_mobile .topbar__rightnav-body .arrow-right {
