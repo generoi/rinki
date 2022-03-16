@@ -76,6 +76,7 @@ h1,
   letter-spacing: 0 !important;
 }
 h2,
+div.cta__title,
 .h2 {
   font-size: 24px !important;
   line-height: 32px !important;
@@ -113,6 +114,7 @@ h4 {
     letter-spacing: 0 !important;
   }
   h2,
+  div.cta__title,
   .h2 {
     font-size: 16px !important;
     line-height: 20px !important;
@@ -218,9 +220,12 @@ a.navigation-menu__logo {
   font-weight: 400 !important;
 }
 
+.topbar__bottom .category-link-middle ul.menu li.current-menu-item a {
+  text-decoration: underline !important;
+  font-weight: 700 !important;
+}
+
 .topbar__bottom .category-link-middle ul.menu li a:hover {
-  margin-right: 0 !important;
-  padding: var(--spacing-s) 0 !important;
   text-decoration: underline !important;
 }
 
@@ -516,15 +521,22 @@ section.widget.widget_faq .list-item .meta-list {
   display: none !important;
 }
 
+.single .typography__photographer::before,
+.single .typography__date::before {
+  top: -6px !important;
+}
+
 .single .widget.quiz .bulb-right {
-  background-image: url(https://verkkolehti.rinkiin.fi/wp-content/uploads/2022/03/lightbulb-on-light.svg) !important;
+  background-image: url(https://verkkolehti.rinkiin.fi/wp-content/uploads/2022/03/rinki-bulb.svg) !important;
   width: 29px !important;
+  margin-top: -6px !important;
 }
 
 .single .widget.quiz .quiz__header {
   display: flex !important;
   gap: 6px !important;
   margin-bottom: 6px !important;
+  text-transform: capitalize !important;
 }
 
 .single .widget.quiz .quiz__content {
@@ -851,7 +863,7 @@ color: transparent !important;
 }
 
 .topbar .tilis_nav_icon-open {
-  background-image: url(https://verkkolehti.rinkiin.fi/wp-content/uploads/2022/03/bars-regular.svg) !important;
+  background-image: url(https://verkkolehti.rinkiin.fi/wp-content/uploads/2022/03/rinki-burger.svg) !important;
 }
 
 .topbar .tilis_nav_icon-close {
@@ -995,5 +1007,111 @@ display: none !important;
 }
 
 .single #content {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
+}
+
+.widget.widget_mostrecent_articles article:nth-child(4),
+.widget.widget_mostrecent_articles article:nth-child(5),
+.widget.widget_mostrecent_articles article:nth-child(6) {
+  display: none !important;
+}
+
+.content__sidestory .sidestory-box {
+  background: none !important;
+  padding: 0 !important;
+}
+
+#content .content__featured-image-caption {
+  color: var(--black-75-color) !important;
+}
+
+#content p a,
+#content .content__intro,
+#content .meta-content *,
+#content .content__title,
+#content p {
+  color: var(--black-color) !important;
+}
+
+.archive #content .block-header {
+  background: none !important;
+  color: var(--black-color) !important;
+  padding: 0 !important;
+  text-transform: none !important;
+}
+
+@media screen and (min-width: 1140px) {
+  .archive #content .block-header {
+      margin: 0 -15px 24px -15px !important;
+  }
+  .archive:not(.category-paakirjoitus):not(.category-editorial) #content .grid {
+    gap: 24px !important;
+  }
+
+  .archive:not(.category-paakirjoitus):not(.category-editorial) #content .grid article {
+    width: 48% !important;
+    background: var(--white-color) !important;
+    padding: 0 !important;
+  }
+
+  .archive #content .grid article .meta-list .typography__date:before {
+top: -6px !important;
+  }
+
+  .archive:not(.category-paakirjoitus):not(.category-editorial) #content .grid article .list-item {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .archive:not(.category-paakirjoitus):not(.category-editorial) #content .grid article .list-item__image,
+  .archive:not(.category-paakirjoitus):not(.category-editorial) #content .grid article .list-item__body
+   {
+     width: 100% !important;
+  }
+
+    .archive:not(.category-paakirjoitus):not(.category-editorial) #content .grid article .list-item__image .fluid-image {
+      padding-top: 58% !important;
+    }
+
+    .archive #content .rinkiin_loadmore {
+      margin-top: 32px !important;
+    }
+}
+
+.archive.category-paakirjoitus #content article,
+.archive.category-editorial #content article {
+  padding: 0 !important;
+  background: var(--white-color) !important;
+
+}
+
+.archive.category-paakirjoitus #content article:not(:last-child),
+.archive.category-editorial #content article:not(:last-child) {
+  margin-bottom: 16px !important;
+}
+
+.archive.category-paakirjoitus #content article .list-item,
+.archive.category-editorial #content article .list-item {
+  margin-bottom: 0 !important;
+  display: flex !important;
+}
+
+.archive.category-paakirjoitus #content article .list-item__image,
+.archive.category-editorial #content article .list-item__image {
+  width: 80px !important;
+  padding: 12px !important;
+}
+
+.archive.category-paakirjoitus #content article .list-item__body,
+.archive.category-editorial #content article .list-item__body {
+  padding: 16px 24px 16px 12px !important;
+}
+
+.archive.category-paakirjoitus #content article .list-item__image .fluid-image,
+.archive.category-editorial #content article .list-item__image .fluid-image {
+  border-radius: 50% !important;
+}
+
+.archive .button.button.rinkiin_loadmore {
+  margin-top: 24px !important;
 }
