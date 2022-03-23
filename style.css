@@ -74,7 +74,7 @@ h1,
 .first-item .box-item .box-item__headline,
 .topbar .top-area__links:nth-child(2) .topbar__logo-middle .topbar__logo-middle-text {
   font-size: 36px !important;
-  line-height: 42px !important;
+  line-height: 44px !important;
   letter-spacing: 0 !important;
   font-weight: 900;
 }
@@ -115,7 +115,7 @@ h4 {
   .first-item .box-item .box-item__headline,
   .topbar .top-area__links:nth-child(2) .topbar__logo-middle .topbar__logo-middle-text {
     font-size: 24px !important;
-    line-height: 24px !important;
+    line-height: 28px !important;
     letter-spacing: 0 !important;
   }
   h2,
@@ -147,6 +147,19 @@ h4 {
     font-size: 16px !important;
     line-height: 23px !important;
     letter-spacing: 0 !important;
+  }
+
+  .single .typography__author,
+  .single .typography__photographer {
+    display: block !important;
+  }
+
+  .single .typography__photographer {
+    padding-left: 0 !important;
+  }
+
+  .single .typography__photographer::before {
+    display: none !important;
   }
 }
 
@@ -389,21 +402,20 @@ a.navigation-menu__logo {
 
 .widget-area .widget_mostrecent_articles .list-item__image {
   overflow: hidden !important;
-  width: 69px !important;
-  height: 69px !important;
-  margin-right: var(--spacing-s) !important;
 }
 
 .widget-area .widget_mostrecent_articles .list-item__body {
   padding: 0 !important;
+  padding-left: 12px !important;
   display: flex !important;
   flex-direction: column !important;
-  gap: 4px !important;
+  gap: 2px !important;
 }
 
 .widget-area .widget_mostrecent_articles .list-item__body .list-item__headline {
   order: 2 !important;
-  margin-top: 4px !important;
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
 }
 
 .widget-area .widget_mostrecent_articles .list-item__body .typography__date::before {
@@ -1069,36 +1081,36 @@ display: none !important;
   text-transform: none !important;
 }
 
+.archive #content .grid article .meta-list .typography__date:before {
+  top: -6px !important;
+}
+
 @media screen and (min-width: 1140px) {
   .archive #content .block-header {
       margin: 0 -15px 24px -15px !important;
   }
-  .archive:not(.category-paakirjoitus):not(.category-editorial) #content .grid {
+  .archive:not(.category-nakokulma):not(.category-viewpoint) #content .grid {
     gap: 24px !important;
   }
 
-  .archive:not(.category-paakirjoitus):not(.category-editorial) #content .grid article {
+  .archive:not(.category-nakokulma):not(.category-viewpoint) #content .grid article {
     width: 48% !important;
     background: var(--white-color) !important;
     padding: 0 !important;
   }
 
-  .archive #content .grid article .meta-list .typography__date:before {
-top: -6px !important;
-  }
-
-  .archive:not(.category-paakirjoitus):not(.category-editorial) #content .grid article .list-item {
+  .archive:not(.category-nakokulma):not(.category-viewpoint) #content .grid article .list-item {
     display: flex !important;
     flex-direction: column !important;
   }
 
-  .archive:not(.category-paakirjoitus):not(.category-editorial) #content .grid article .list-item__image,
-  .archive:not(.category-paakirjoitus):not(.category-editorial) #content .grid article .list-item__body
+  .archive:not(.category-nakokulma):not(.category-viewpoint) #content .grid article .list-item__image,
+  .archive:not(.category-nakokulma):not(.category-viewpoint) #content .grid article .list-item__body
    {
      width: 100% !important;
   }
 
-    .archive:not(.category-paakirjoitus):not(.category-editorial) #content .grid article .list-item__image .fluid-image {
+    .archive:not(.category-nakokulma):not(.category-viewpoint) #content .grid article .list-item__image .fluid-image {
       padding-top: 58% !important;
     }
 
@@ -1107,37 +1119,37 @@ top: -6px !important;
     }
 }
 
-.archive.category-paakirjoitus #content article,
-.archive.category-editorial #content article {
+.archive.category-nakokulma #content article,
+.archive.category-viewpoint #content article {
   padding: 0 !important;
   background: var(--white-color) !important;
 
 }
 
-.archive.category-paakirjoitus #content article:not(:last-child),
-.archive.category-editorial #content article:not(:last-child) {
+.archive.category-nakokulma #content article:not(:last-child),
+.archive.category-viewpoint #content article:not(:last-child) {
   margin-bottom: 16px !important;
 }
 
-.archive.category-paakirjoitus #content article .list-item,
-.archive.category-editorial #content article .list-item {
+.archive.category-nakokulma #content article .list-item,
+.archive.category-viewpoint #content article .list-item {
   margin-bottom: 0 !important;
   display: flex !important;
 }
 
-.archive.category-paakirjoitus #content article .list-item__image,
-.archive.category-editorial #content article .list-item__image {
+.archive.category-nakokulma #content article .list-item__image,
+.archive.category-viewpoint #content article .list-item__image {
   width: 80px !important;
   padding: 12px !important;
 }
 
-.archive.category-paakirjoitus #content article .list-item__body,
-.archive.category-editorial #content article .list-item__body {
+.archive.category-nakokulma #content article .list-item__body,
+.archive.category-viewpoint #content article .list-item__body {
   padding: 16px 24px 16px 12px !important;
 }
 
-.archive.category-paakirjoitus #content article .list-item__image .fluid-image,
-.archive.category-editorial #content article .list-item__image .fluid-image {
+.archive.category-nakokulma #content article .list-item__image .fluid-image,
+.archive.category-viewpoint #content article .list-item__image .fluid-image {
   border-radius: 50% !important;
 }
 
@@ -1145,6 +1157,29 @@ top: -6px !important;
   margin-top: 24px !important;
 }
 
+.archive .list-item .list-item__body {
+  padding: 0 !important;
+  padding-left: 12px !important;
+}
+
 .widget_single_articles_readmore .h2.block-header {
   margin-bottom: 16px !important;
+}
+
+.single .typography__author,
+.single .typography__photographer {
+  font-size: 14px !important;
+  line-height: 20px !important;
+}
+
+.single .typography__photographer::before {
+  display: none !important;
+}
+
+.widget-area .widget_mostrecent_articles .meta-list.typography__meta.typography__meta_alt {
+  order: 3 !important;
+}
+
+.content__title:last-child {
+  margin-bottom: 12px;
 }
