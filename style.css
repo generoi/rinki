@@ -1060,28 +1060,28 @@ display: none !important;
   .archive #content .block-header {
       margin: 0 -15px 24px -15px !important;
   }
-  .archive:not(.category-nakokulma):not(.category-viewpoint) #content .grid {
+  .archive:not(.category-nakokulma):not(.category-perspective) #content .grid {
     gap: 24px !important;
   }
 
-  .archive:not(.category-nakokulma):not(.category-viewpoint) #content .grid article {
+  .archive:not(.category-nakokulma):not(.category-perspective) #content .grid article {
     width: 48% !important;
     background: var(--white-color) !important;
     padding: 0 !important;
   }
 
-  .archive:not(.category-nakokulma):not(.category-viewpoint) #content .grid article .list-item {
+  .archive:not(.category-nakokulma):not(.category-perspective) #content .grid article .list-item {
     display: flex !important;
     flex-direction: column !important;
   }
 
-  .archive:not(.category-nakokulma):not(.category-viewpoint) #content .grid article .list-item__image,
-  .archive:not(.category-nakokulma):not(.category-viewpoint) #content .grid article .list-item__body
+  .archive:not(.category-nakokulma):not(.category-perspective) #content .grid article .list-item__image,
+  .archive:not(.category-nakokulma):not(.category-perspective) #content .grid article .list-item__body
    {
      width: 100% !important;
   }
 
-    .archive:not(.category-nakokulma):not(.category-viewpoint) #content .grid article .list-item__image .fluid-image {
+    .archive:not(.category-nakokulma):not(.category-perspective) #content .grid article .list-item__image .fluid-image {
       padding-top: 58% !important;
     }
 
@@ -1091,36 +1091,36 @@ display: none !important;
 }
 
 .archive.category-nakokulma #content article,
-.archive.category-viewpoint #content article {
+.archive.category-perspective #content article {
   padding: 0 !important;
   background: var(--white-color) !important;
 
 }
 
 .archive.category-nakokulma #content article:not(:last-child),
-.archive.category-viewpoint #content article:not(:last-child) {
+.archive.category-perspective #content article:not(:last-child) {
   margin-bottom: 16px !important;
 }
 
 .archive.category-nakokulma #content article .list-item,
-.archive.category-viewpoint #content article .list-item {
+.archive.category-perspective #content article .list-item {
   margin-bottom: 0 !important;
   display: flex !important;
 }
 
 .archive.category-nakokulma #content article .list-item__image,
-.archive.category-viewpoint #content article .list-item__image {
+.archive.category-perspective #content article .list-item__image {
   width: 80px !important;
   padding: 12px !important;
 }
 
 .archive.category-nakokulma #content article .list-item__body,
-.archive.category-viewpoint #content article .list-item__body {
+.archive.category-perspective #content article .list-item__body {
   padding: 16px 24px 16px 12px !important;
 }
 
 .archive.category-nakokulma #content article .list-item__image .fluid-image,
-.archive.category-viewpoint #content article .list-item__image .fluid-image {
+.archive.category-perspective #content article .list-item__image .fluid-image {
   border-radius: 50% !important;
 }
 
