@@ -26,36 +26,7 @@
   --spacing-5xl: 128px;
 }
 
-@font-face {
-  font-family: 'BentonSans';
-  font-weight: 900;
-  src: url('https://public-1581674907527.s3.eu-west-1.amazonaws.com/BentonSans/BentonSans+Black.otf') format('opentype');
-}
-@font-face {
-  font-family: 'BentonSans';
-  font-weight: 700;
-  src: url('https://public-1581674907527.s3.eu-west-1.amazonaws.com/BentonSans/BentonSans+Bold.otf') format('opentype');
-}
-@font-face {
-  font-family: 'BentonSans';
-  font-weight: 500;
-  src: url('https://public-1581674907527.s3.eu-west-1.amazonaws.com/BentonSans/BentonSans+Medium.otf') format('opentype');
-}
-@font-face {
-  font-family: 'BentonSans';
-  font-weight: 400;
-  src: url('https://public-1581674907527.s3.eu-west-1.amazonaws.com/BentonSans/BentonSans+Book.otf') format('opentype');
-}
-@font-face {
-  font-family: 'BentonSans';
-  font-weight: 300;
-  src: url('https://public-1581674907527.s3.eu-west-1.amazonaws.com/BentonSans/BentonSans+Light.otf') format('opentype');
-}
-@font-face {
-  font-family: 'BentonSans';
-  font-weight: 100;
-  src: url('https://public-1581674907527.s3.eu-west-1.amazonaws.com/BentonSans/BentonSans+Thin.otf') format('opentype');
-}
+@import url('https://use.typekit.net/rfw3awm.css');
 
 h1,
 h2,
@@ -66,7 +37,7 @@ h6,
 p,
 a,
 span {
-  font-family: 'BentonSans', sans-serif !important;
+  font-family: 'benton-sans', sans-serif !important;
 }
 
 h1,
@@ -591,7 +562,7 @@ div.cta__container {
   box-shadow: none !important;
   background: var(--blue-color) !important;
   color: var(--white-color) !important;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
   font-size: 13.5px !important;
   text-transform: uppercase !important;
 }
@@ -606,7 +577,7 @@ div.cta__container .button {
   padding: var(--spacing-xs) var(--spacing-l) !important;
   box-shadow: none !important;
   font-size: 13.5px !important;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
   background: var(--blue-color) !important;
   color: var(--white-color) !important;
   text-transform: uppercase !important;
@@ -640,7 +611,7 @@ a.topbar__logo-middle .topbar__logo-middle-text {
 button.button.rinkiin_loadmore {
   color: var(--black-color) !important;
   background: var(--green-color) !important;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
   width: fit-content !important;
   margin: auto !important;
   border-radius: 4px !important;
